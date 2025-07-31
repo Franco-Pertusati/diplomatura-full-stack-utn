@@ -22,7 +22,7 @@ header {
     z-index: 10;
 }
 
-#productsSection, #lastSection {
+#productsSection, #lastSection, .section3 {
     margin: 0 auto;
     margin-bottom: 64px;
     max-width: 866px;
