@@ -1,0 +1,73 @@
+nav {
+    padding: 4px 32px;
+}
+
+.navContainer {
+    width: 100vw;
+    position: fixed;
+    top: 12px;
+}
+
+header {
+    height: 400px;
+    background-color: var(--bg);
+    opacity: 1;
+    background-size: 20px 20px;
+    background-image: repeating-linear-gradient(0deg, var(--text-muted), var(--text-muted) 1px, var(--text) 1px, var(--text));
+}
+
+header * {
+    line-height: 1.2;
+}
+
+header h1, header strong {
+    font-size: 5rem;
+    z-index: 10;
+}
+
+header strong {
+    color: var(--bg-light);
+    position: relative;
+    z-index: 1; 
+    display: inline-block;
+}
+
+header strong::before {
+    padding: 0 8px;
+    content: '';
+    transform: rotate(4deg);
+    position: absolute;
+    top: 0;
+    left: -8px;
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+header ul {
+    margin-top: 10px;
+    gap: 19px;
+}
+
+header li {
+    color: var(--bg);
+}
+
+li strong {
+    font-size: 1.8rem;
+}
+
+li strong::before {
+    transform: rotate(0deg);
+    padding: 0;
+    left: -4px;
+    padding: 0 4px;
+}
+
+header button {
+    margin: 0 auto 18px auto;
+    background-color: var(--bg-dark);
+    font-weight: bold;
+}

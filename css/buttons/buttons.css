@@ -1,0 +1,8 @@
+.ctaBtn {
+    background-color: var(--text);
+    color: var(--bg-dark);
+}
+
+.ctaBtn:hover {
+    background-color: var(--text);
+}
