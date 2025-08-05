@@ -13,6 +13,14 @@
     background-color: var(--primary);
 }
 
+.bg {
+    background-color: var(--bg-dark);
+}
+
+.bgLight {
+    background-color: var(--bg-light);
+}
+
 .titleText {
     font-weight: 700;
     font-size: 3.2rem;
@@ -46,6 +54,10 @@
 
 .textLight {
     color: var(--text);
+}
+
+.textPrimary {
+    color: var(--primary);
 }
 
 .flex {
@@ -132,6 +144,10 @@
     gap: var(--spacing-5);
 }
 
+.gap6 {
+    gap: var(--spacing-6);
+}
+
 .p1 {
     padding: var(--spacing-1);
 }
@@ -181,6 +197,11 @@
     padding-right: var(--spacing-5);
 }
 
+.px6 {
+    padding-left: var(--spacing-6);
+    padding-right: var(--spacing-6);
+}
+
 .py1 {
     padding-top: var(--spacing-1);
     padding-bottom: var(--spacing-1);
@@ -204,6 +225,11 @@
 .py5 {
     padding-top: var(--spacing-5);
     padding-bottom: var(--spacing-5);
+}
+
+.py6 {
+    padding-top: var(--spacing-6);
+    padding-bottom: var(--spacing-6);
 }
 
 /* Margin utilities */
@@ -313,9 +339,17 @@
     height: 100%;
 }
 
-
 .mAuto {
     margin: 0 auto;
+}
+
+.shadowXl {
+    box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin: 32px 0;
+    padding: var(--spacing6);
 }
 
 .container {
@@ -323,5 +357,13 @@
     /* max-width: 1200px; */
     max-width: 412px;
     margin: 0 auto;
-    padding: 12px;
+    background-color: var(--bg-dark);
+}
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
 }

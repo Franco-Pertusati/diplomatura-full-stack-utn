@@ -8,39 +8,104 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/sections/navbar.css" />
+    <link rel="stylesheet" href="css/sections/hero.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container relative">
       <!-- NAVBAR -->
 
-      <!-- <div class="flex flexJustCenter navContainer">
-      <nav class="card itemsCenter roundedFull flex wfit just p2 px4 gap4">
-        <a class="titleText" href="">NotesApp</a>
-        <ul class="flex">
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Prcing</a></li>
-          <li><a href="#">Try a demo</a></li>
-        </ul>
-      </nav>
-    </div> -->
+      <div class="navContainer relative">
+        <nav class="itemsCenter p4 bg flex justBetween wFull gap4">
+          <a class="titleText" href="">App Name</a>
+          <a class="bgPrimary textDark" href="">Probar</a>
+        </nav>
+      </div>
 
-      <!-- HEADER -->
+      <!-- HERO -->
 
-      <header class="bgPrimary roundedxl p5 flex flexCol justBetween">
-        <h1 class="textDark">App de notas <strong>gratis</strong></h1>
-        <br />
-        <ul class="flex hFull justCenter flexCol">
-          <li>1. Feature <strong>increible</strong> de la App</li>
-          <li>2. Otra cosa a <strong>destacar</strong> de la App</li>
-          <li>3. Feature <strong>increible</strong> de la App</li>
-        </ul>
-        <button>¡Probar!</button>
-      </header>
+      <section>
+        <header class="bgPrimary roundedxl p6 flex flexCol justBetween">
+          <h1 class="textDark">App de notas <strong>gratis</strong></h1>
+          <br />
+          <ul class="flex hFull justCenter flexCol">
+            <li>1. Feature <strong>increible</strong> de la App</li>
+            <li>2. Otra cosa a <strong>destacar</strong> de la App</li>
+            <li>3. Feature <strong>increible</strong> de la App</li>
+          </ul>
+          <button class="shadowXl">¡Probar!</button>
+        </header>
+
+        <img
+          src="https://i.pinimg.com/1200x/95/23/4a/95234a5d51ff2d5eae3ba76c7facad8c.jpg"
+          alt=""
+        />
+      </section>
+
+      <!-- MAIN -->
+      <section class="flex flexCol gap6">
+        <h2 class="textPrimary">Features</h2>
+        <div class="card roundedxl p6">
+          <h3 class="titleText">Sistema de carpetas</h3>
+          <span class="mutedText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            ratione optio laudantium mollitia sequi, hic autem quam, ullam fuga
+            eum sed explicabo! Labore exercitationem officia, architecto
+            molestiae consequuntur autem sint?
+          </span>
+        </div>
+        <div class="card roundedxl p6">
+          <h3 class="titleText">Sistema multiplataforma</h3>
+          <span class="mutedText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            ratione optio laudantium mollitia sequi, hic autem quam, ullam fuga
+            eum sed explicabo! Labore exercitationem officia, architecto
+            molestiae consequuntur autem sint?
+          </span>
+        </div>
+        <div class="card roundedxl p6">
+          <h3 class="titleText">Agenda</h3>
+          <span class="mutedText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            ratione optio laudantium mollitia sequi, hic autem quam, ullam fuga
+            eum sed explicabo! Labore exercitationem officia, architecto
+            molestiae consequuntur autem sint?
+          </span>
+        </div>
+        <div class="card roundedxl p6">
+          <h3 class="titleText">Notas rapidas</h3>
+          <span class="mutedText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            ratione optio laudantium mollitia sequi, hic autem quam, ullam fuga
+            eum sed explicabo! Labore exercitationem officia, architecto
+            molestiae consequuntur autem sint?
+          </span>
+        </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="p6 bgLight">
+        <h3 class="titleText">App Name</h3>
+        <br>
+        <div class="flex justEvenly">
+          <div>
+            <ul>
+              <li><a class="mutedText" href="">Contacto</a></li>
+              <li><a class="mutedText" href="">Privacidad</a></li>
+              <li><a class="mutedText" href="">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a class="mutedText" href="">Contacto</a></li>
+              <li><a class="mutedText" href="">Privacidad</a></li>
+              <li><a class="mutedText" href="">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

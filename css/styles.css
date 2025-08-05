@@ -1,7 +1,6 @@
 @import url(utilities.css);
 @import url(normalize.css);
 @import url(buttons/buttons.css);
-@import url(sections/navbar.css);
 
 :root {
     --bg-dark: hsl(0, 0%, 5%);
@@ -12,8 +11,8 @@
     --highline: hsl(0, 0%, 24%);
     --bottomline: hsl(0, 0%, 14%);
 
-    --text: hsl(0, 0%, 95%);
-    --text-muted: hsl(0, 0%, 70%);
+    --text: hsl(0, 0%, 90%);
+    --text-muted: hsl(0, 0%, 75%);
 
     --primary: #F0DB4C;
 
@@ -36,7 +35,8 @@
 }
 
 body {
-    background-color: var(--bg-dark);
+    background-color: var(--bg);
+    height: 100vh;
 }
 
 body * {
@@ -70,4 +70,8 @@ h1 {
     margin: 0;
     font-weight: bolder;
     text-align: center;
+}
+
+section {
+    padding: 0 12px;
 }
