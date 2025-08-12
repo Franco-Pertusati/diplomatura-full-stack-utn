@@ -13,15 +13,28 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container relative">
       <!-- NAVBAR -->
 
       <div class="navContainer relative">
-        <nav class="itemsCenter p4 bg flex justBetween wFull gap4">
-          <a class="titleText" href="">App Name</a>
-          <a class="bgPrimary textDark" href="">Probar</a>
+        <nav class="itemsCenter bg">
+          <div class="mwScreen p4 flex itemsCenter justBetween gap4">
+            <a class="titleText" href="">App Name</a>
+            <ul class="gap6">
+              <li><a href="">Features</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a class="bgPrimary textDark" href="">Probar</a></li>
+            </ul>
+            <button>
+              <i class="material-icons-round">menu</i>
+            </button>
+          </div>
         </nav>
       </div>
 
@@ -31,7 +44,9 @@
         <header class="roundedxl">
           <h1 class="textDark s1">App de notas <strong>gratis</strong></h1>
           <span class="s2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis possimus inventore doloremque rem. Itaque ratione tempore impedit accusantium?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            possimus inventore doloremque rem. Itaque ratione tempore impedit
+            accusantium?
           </span>
           <button class="shadowXl s3">¡Probar!</button>
         </header>
@@ -86,30 +101,161 @@
             </span>
           </div>
         </div>
-        <div class="pricing">
-          
+        <br />
+        <h2 class="textPrimary">Pricing</h2>
+
+        <div class="pricingContainer">
+          <div class="pricingCard bgLight">
+            <div class="pricing flex wFull">
+              <div class="card p4 flex flexCol gap6">
+                <div class="cardHeader flex flexCol justBetween p4 bgLight">
+                  <span class="pricingTitle">Free</span>
+                  <span><strong class="titleText">$0</strong>/month</span>
+                </div>
+                <span class="mutedText">Perfecto para estudiantes</span>
+                <button class="ctaBtn wFull">
+                  <span class="mAuto">Probar</span>
+                </button>
+              </div>
+            </div>
+            <div>
+              <ul>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText">Lorem ipsum dolor sit.</span>
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText"
+                    >Lorem ipsum dolor sit amet consectetur.</span
+                  >
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText">Lorem, ipsum dolor.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pricingCard roundedxl bgLight" id="premiumHighlight">
+            <div class="pricing flex wFull">
+              <div class="card p4 flex flexCol gap6 roundedxl shadowXl">
+                <div
+                  class="cardHeader flex flexCol justBetween p4 bgLight rounded4"
+                >
+                  <span class="pricingTitle">Premium</span>
+                  <span class="prm"
+                    ><strong class="titleText">$10</strong>/month</span
+                  >
+                </div>
+                <span class="mutedText">Perfecto para estudiantes</span>
+                <button class="ctaBtn wFull">
+                  <span class="mAuto">Probar</span>
+                </button>
+              </div>
+            </div>
+            <div>
+              <ul>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText">Lorem ipsum dolor sit.</span>
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText"
+                    >Lorem ipsum dolor sit amet consectetur.</span
+                  >
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText"
+                    >Lorem ipsum dolor sit amet consectetur.</span
+                  >
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText">Lorem, ipsum dolor.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pricingCard roundedxl bgLight">
+            <div class="pricing flex wFull">
+              <div class="card p4 flex flexCol gap6 roundedxl">
+                <div
+                  class="cardHeader flex flexCol justBetween p4 bgLight rounded4"
+                >
+                  <span class="pricingTitle">Pro</span>
+                  <span><strong class="titleText">$24</strong>/month</span>
+                </div>
+                <span class="mutedText">Perfecto para estudiantes</span>
+                <button class="ctaBtn wFull">
+                  <span class="mAuto">Probar</span>
+                </button>
+              </div>
+            </div>
+            <div>
+              <ul>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText">Lorem ipsum dolor sit.</span>
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText"
+                    >Lorem ipsum dolor sit amet consectetur.</span
+                  >
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText">Lorem, ipsum dolor.</span>
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText">Lorem ipsum dolor sit.</span>
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText"
+                    >Lorem ipsum dolor sit amet consectetur.</span
+                  >
+                </li>
+                <li class="flex gap4 itemsCenter">
+                  <i class="material-icons-round mutedText">check</i>
+                  <span class="mutedText">Lorem, ipsum dolor.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- FOOTER -->
 
       <footer class="p6 bgLight">
-        <h3 class="titleText">App Name</h3>
-        <br />
-        <div class="flex justEvenly">
-          <div>
-            <ul>
-              <li><a class="mutedText" href="">Contacto</a></li>
-              <li><a class="mutedText" href="">Privacidad</a></li>
-              <li><a class="mutedText" href="">Contacto</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><a class="mutedText" href="">Contacto</a></li>
-              <li><a class="mutedText" href="">Privacidad</a></li>
-              <li><a class="mutedText" href="">Contacto</a></li>
-            </ul>
+        <div class="mwScreen">
+          <h3 class="titleText">App Name</h3>
+          <br />
+          <div class="flex justEvenly">
+            <div>
+              <ul>
+                <li><a class="mutedText" href="">Contacto</a></li>
+                <li><a class="mutedText" href="">Privacidad</a></li>
+                <li><a class="mutedText" href="">Contacto</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a class="mutedText" href="">Contacto</a></li>
+                <li><a class="mutedText" href="">Privacidad</a></li>
+                <li><a class="mutedText" href="">Contacto</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>

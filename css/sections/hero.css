@@ -99,6 +99,75 @@ footer {
     width: 100%;
 }
 
+.pricingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pricingCard {
+    width: 100%;
+}
+
+.pricingCard,
+.pricingCard .card {
+    border-radius: 32px;
+}
+
+.pricingCard .card {
+    width: 100%;
+    gap: 18px;
+}
+
+.pricingTitle {
+    border-radius: 24px;
+}
+
+.cardHeader {
+    border-radius: 24px;
+}
+
+.pricingCard button {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.pricingCard ul {
+    padding: 24px 12px;
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.cardHeader {
+    height: 142px;
+}
+
+.pricingTitle {
+    padding: 6px 12px;
+    width: fit-content;
+    background-color: var(--bg-dark);
+}
+
+#premiumHighlight {
+    background-color: var(--primary);
+}
+
+#premiumHighlight ul * {
+    color: var(--bg-dark);
+    font-weight: bold;
+}
+
+
+.mwScreen {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: none;
+}
 
 @media (min-width: 768px) {
     section {
@@ -117,9 +186,21 @@ footer {
         text-align: start;
     }
 
-    #mainSection .card {
+    .cardContainer .card {
         width: calc(50% - var(--spacing-3));
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
     }
 }
 
-@media (min-width: 960px) {}
+@media (min-width: 960px) {
+        .pricingContainer {
+        flex-direction: row;
+    }
+}

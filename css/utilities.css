@@ -327,6 +327,10 @@
     border-radius: var(--spacing-5);
 }
 
+.rounded6 {
+    border-radius: var(--spacing-6);
+}
+
 .roundedxl {
     border-radius: 24px;
 }
