@@ -92,6 +92,10 @@
     display: none;
 }
 
+.flexWrap {
+    flex-wrap: nowrap;
+}
+
 .flexCol {
     flex-direction: column;
 }
@@ -354,8 +358,6 @@ section {
 
 .container {
     width: 100%;
-    /* max-width: 1200px; */
-    max-width: 412px;
     margin: 0 auto;
     background-color: var(--bg-dark);
 }

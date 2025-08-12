@@ -73,5 +73,7 @@ h1 {
 }
 
 section {
+    max-width: 1240px;
     padding: 0 12px;
+    margin: 42px auto;
 }

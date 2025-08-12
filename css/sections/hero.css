@@ -6,10 +6,8 @@ nav {
     margin: 0 auto;
     padding: 0 12px;
     width: 100%;
-    max-width: 412px;
     position: fixed;
     top: 0;
-    left: calc(50% - 206px);
     padding: 0;
     background-color: var(--bg);
     z-index: 30;
@@ -17,24 +15,37 @@ nav {
 }
 
 header {
+    display: grid;
+    grid-template-rows: repeat(11, 26px);
     background-color: var(--bg);
-    background-size: 20px 20px;
+    background-size: 26px 26px;
     background-image: repeating-linear-gradient(0deg, var(--text-muted), var(--text-muted) 1px, var(--text) 1px, var(--text));
     margin-bottom: 12px;
 }
 
-header * {
-    line-height: 1.2;
+header .s1 {
+    grid-row: 4 span;
 }
 
-header h1, header strong {
-    font-size: 5rem;
+header .s2 {
+    grid-row: 4 span;
+}
+
+header .s3 {
+    grid-row: 3 span;
+}
+
+header h1,
+header strong {
+    font-size: 3.8rem;
+    text-align: start;
+    margin: auto;
 }
 
 header strong {
     color: var(--bg-light);
     position: relative;
-    z-index: 1; 
+    z-index: 1;
     display: inline-block;
 }
 
@@ -52,29 +63,17 @@ header strong::before {
     opacity: .6;
 }
 
-header ul {
-    margin-top: 10px;
-    gap: 19px;
-}
-
-header li {
-    color: var(--bg);
-}
-
-li strong {
-    font-size: 1.8rem;
-}
-
-li strong::before {
-    transform: rotate(0deg);
-    padding: 0;
-    left: -4px;
-    padding: 0 4px;
+header span {
+    text-align: center;
+    margin: 0 18px;
+    color: var(--bg-light);
+    line-height: 26px;
 }
 
 header button {
+    height: fit-content;
     padding: 12px 24px;
-    margin: 22px auto;
+    margin: auto;
     background-color: var(--bg-dark);
     font-weight: bold;
 }
@@ -89,3 +88,38 @@ img {
 footer {
     border-top: solid 1px var(--border);
 }
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-6);
+}
+
+.cardContainer .card {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    section {
+        padding: 0 42px;
+    }
+
+    #headerSection {
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    #headerSection .s2 {
+        grid-row: 3 span;
+    }
+
+    #headerSection header h1 {
+        text-align: start;
+    }
+
+    #mainSection .card {
+        width: calc(50% - var(--spacing-3));
+    }
+}
+
+@media (min-width: 960px) {}
