@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    max-width: 860px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.pageIndexContaner {
+    width: 142px;
+    border-right: 1px solid var(--border);
+}
+
+.bgPrimary span {
+    color: var(--bg-light);
+}
+
+.error {
+    outline: solid 2px var(--red);
+}

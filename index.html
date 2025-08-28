@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="pageIndexContaner flex flexCol gap6 p6">
+        <span class="boldText">Indice</span>
+        <ul class="flex flexCol gap6">
+          <li><a href="#">Ejercicio 1</a></li>
+          <li><a href="#">Ejercicio 2</a></li>
+          <li><a href="#">Ejercicio 3</a></li>
+          <li><a href="#">Ejercicio 4</a></li>
+        </ul>
+      </aside>
+      <main class="activitiesContainer flex flexCol gap">
+        <section id="ej1">
+          <div class="p6">
+            <h2 class="titleText">Ejercicio 1</h2>
+            <span class="mutedText">
+              Generar una función que calcule el promedio de 2 notas de
+              parciales por ejemplo la materia Historia.
+            </span>
+          </div>
+          <div class="p6 flex flexCol gap3">
+            <div class="flex gap6">
+              <div class="flex flexCol gap3 wFit">
+                <label for="nota1">Primer cuatrimestre</label>
+                <input type="number" id="nota1" placeholder="8" class="card" />
+              </div>
+              <div class="flex flexCol gap3 wFit">
+                <label for="nota2">Segundo cuatrimestre</label>
+                <input type="number" id="nota2" placeholder="7" class="card" />
+              </div>
+            </div>
+            <div class="flex gap6 itemsCenter">
+              <button class="bgPrimary p6" id="ejercicio1Btn">
+                <span>Calcular promedio</span>
+              </button>
+              <span id="promedioSpan"></span>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="p6">
+            <h2 class="titleText">Ejercicio 2</h2>
+            <span class="mutedText">
+              Programar un contador de caracteres para un textarea.
+            </span>
+          </div>
+          <div class="p6 flex flexCol gap3">
+            <span class="mutedText smallText" id="contadorSpan"
+              >Deja un comentario - 0/32</span
+            >
+            <textarea
+              name="coment"
+              id="textAreaEj2"
+              class="card wFull"
+            ></textarea>
+            <button class="bgPrimary p6 wFit">
+              <span>Comentar</span>
+            </button>
+          </div>
+        </section>
+        <section class="p6 flex flexCol gap3">
+          <div>
+            <h2 class="titleText">Ejercicio 3</h2>
+            <span class="mutedText">
+              En base a la siguiente información de los alumnos, Utilizar los
+              métodos de array vistos para generar un array con los alumnos
+              aprobados. Se considera aprobado todo alumno que tenga una nota
+              mayor o igual a 7.
+            </span>
+          </div>
+          <a class="bgPrimary p6 wFit" href="/ejercicio3.js">
+            <span>Abrir codigo</span>
+          </a>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
